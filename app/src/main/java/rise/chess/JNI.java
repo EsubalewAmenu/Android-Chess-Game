@@ -1,8 +1,8 @@
-package jwtc.chess;
+package rise.chess;
 
 import android.util.Log;
-import jwtc.chess.board.BoardConstants;
-import jwtc.chess.board.ChessBoard;
+import rise.chess.board.BoardConstants;
+import rise.chess.board.ChessBoard;
 
 public class JNI {
 

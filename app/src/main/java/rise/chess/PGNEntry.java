@@ -1,4 +1,4 @@
-package jwtc.chess;
+package rise.chess;
 
 public class PGNEntry {
 

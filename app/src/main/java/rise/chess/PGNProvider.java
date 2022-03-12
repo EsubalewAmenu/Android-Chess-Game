@@ -1,4 +1,4 @@
-package jwtc.chess;
+package rise.chess;
 
 import java.util.Calendar;
 import java.util.HashMap;

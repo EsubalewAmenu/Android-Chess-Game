@@ -1,4 +1,4 @@
-package jwtc.chess.algorithm;
+package rise.chess.algorithm;
 
 import java.io.BufferedReader;
 import java.io.FileOutputStream;
@@ -10,11 +10,10 @@ import java.io.PrintWriter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import android.content.SharedPreferences;
 import android.util.Log;
 
-import jwtc.chess.GameControl;
-import jwtc.chess.Pos;
+import rise.chess.GameControl;
+import rise.chess.Pos;
 
 public class UCIWrapper {
 

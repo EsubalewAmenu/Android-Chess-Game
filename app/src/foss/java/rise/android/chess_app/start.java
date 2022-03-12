@@ -1,4 +1,4 @@
-package rise.android.chess;
+package rise.android.chess_app;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,13 +15,10 @@ import android.widget.Toast;
 
 import java.util.Locale;
 
-import rise.android.chess.ChessPreferences;
-import rise.android.chess.HtmlActivity;
-import rise.android.chess.ics.ICSClient;
-import rise.android.chess.main;
-import rise.android.chess.puzzle.practice;
-import rise.android.chess.puzzle.puzzle;
-import rise.android.chess.tools.pgntool;
+import rise.android.chess_app.ics.ICSClient;
+import rise.android.chess_app.puzzle.practice;
+import rise.android.chess_app.puzzle.puzzle;
+import rise.android.chess_app.tools.pgntool;
 
 
 public class start extends Activity {

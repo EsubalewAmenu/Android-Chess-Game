@@ -1,4 +1,4 @@
-package jwtc.chess.board;
+package rise.chess.board;
 
 // ChessBoard. object extended from BoardMembers, BoardStatics and BoardConstants in order to split up some code and
 // make things structured

@@ -1,4 +1,4 @@
-package jwtc.chess.board;
+package rise.chess.board;
 
 public class BoardStatics extends BoardConstants 
 {

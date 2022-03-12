@@ -1,4 +1,4 @@
-package jwtc.chess;
+package rise.chess;
 
 // Valuation. Wrapper class for evaluation
 

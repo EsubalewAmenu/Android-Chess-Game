@@ -1,6 +1,6 @@
-package jwtc.chess.board;
+package rise.chess.board;
 
-import jwtc.chess.*;
+import rise.chess.*;
 // "split" object for ChessBoard. contains the constants of the board object
 
 public class BoardConstants 

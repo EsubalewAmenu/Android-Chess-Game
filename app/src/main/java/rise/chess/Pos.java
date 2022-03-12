@@ -1,4 +1,4 @@
-package jwtc.chess;
+package rise.chess;
 
 // Pos - Wrapper class for a position or square on the board
 // Provides only static methods

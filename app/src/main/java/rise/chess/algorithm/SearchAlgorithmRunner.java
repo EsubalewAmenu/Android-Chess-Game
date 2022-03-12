@@ -1,8 +1,8 @@
-package jwtc.chess.algorithm;
+package rise.chess.algorithm;
 
-import jwtc.chess.GameControl;
-import jwtc.chess.JNI;
-import jwtc.chess.Move;
+import rise.chess.GameControl;
+import rise.chess.JNI;
+import rise.chess.Move;
 
 public class SearchAlgorithmRunner implements Runnable{
 	protected GameControl m_control;

@@ -1,10 +1,9 @@
-package jwtc.android.chess;
+package rise.android.chess_app;
 
-import jwtc.android.chess.puzzle.practice;
-import jwtc.android.chess.puzzle.puzzle;
-import jwtc.android.chess.tools.pgntool;
-import jwtc.android.chess.ics.*;
-import jwtc.chess.JNI;
+import rise.android.chess_app.puzzle.practice;
+import rise.android.chess_app.puzzle.puzzle;
+import rise.android.chess_app.tools.pgntool;
+import rise.chess.JNI;
 
 import android.content.Context;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package jwtc.chess;
+package rise.chess;
 
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -12,8 +12,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import android.content.res.Resources;
 import android.util.Log;
-import jwtc.chess.algorithm.*;
-import jwtc.chess.board.BoardConstants;
+import rise.chess.algorithm.*;
+import rise.chess.board.BoardConstants;
 
 
 // Controls the game

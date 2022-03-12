@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="jwtc.android.chess"
+      package="rise.android.chess_app"
       android:versionCode="156"
       android:versionName="8.9.5"
       android:installLocation="auto"
@@ -8,15 +8,15 @@
     <application android:name="android.app.Application" android:icon="@drawable/icon" android:label="@string/app_name"
 		android:theme="@style/ChessTheme"
 		>
-    	<provider android:name="MyPGNProvider"
-            android:authorities="jwtc.android.chess.MyPGNProvider"
+    	<provider android:name="rise.android.chess_app.MyPGNProvider"
+            android:authorities="rise.android.chess_app.MyPGNProvider"
 			android:exported="false"
         />
-        <provider android:name=".puzzle.MyPuzzleProvider"
-            android:authorities="jwtc.android.chess.puzzle.MyPuzzleProvider"
+        <provider android:name="rise.android.chess_app.puzzle.MyPuzzleProvider"
+            android:authorities="rise.android.chess_app.puzzle.MyPuzzleProvider"
 			android:exported="false"
         />
-    	<activity android:name=".start" android:label="@string/app_name" android:theme="@style/Theme.AppCompat"
+    	<activity android:name="rise.android.chess_app.start" android:label="@string/app_name" android:theme="@style/Theme.AppCompat"
     	>
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" /> 
@@ -27,20 +27,20 @@
   			</intent-filter>
   		</activity>
   		<activity
-	        android:name=".ChessPreferences"
+	        android:name="rise.android.chess_app.ChessPreferences"
 	        android:label="@string/globalpreferences">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".start" />
+				android:value="rise.android.chess_app.start" />
 		</activity>
 		<activity
-	        android:name=".HtmlActivity"
+	        android:name="rise.android.chess_app.HtmlActivity"
 	        android:label="@string/app_name_help">
 		</activity>
-		<activity android:name=".main" android:label="@string/app_name_play">
+		<activity android:name="rise.android.chess_app.main" android:label="@string/app_name_play">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".start" />
+				android:value="rise.android.chess_app.start" />
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" /> 
   			</intent-filter>
@@ -60,26 +60,26 @@
 				<data android:mimeType="application/x-chess-fen" />
 			</intent-filter>
   		</activity>
-  		<activity android:name=".options" android:label="@string/app_name">
+  		<activity android:name="rise.android.chess_app.options" android:label="@string/app_name">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".main" />
+				android:value="rise.android.chess_app.main" />
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" /> 
   			</intent-filter>
   		</activity>
-		<activity android:name=".mainPrefs" android:label="@string/preferences">
+		<activity android:name="rise.android.chess_app.mainPrefs" android:label="@string/preferences">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".main" />
+				android:value="rise.android.chess_app.main" />
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />
 			</intent-filter>
 		</activity>
-		<activity android:name=".setup" android:label="@string/app_name_setup">
+		<activity android:name="rise.android.chess_app.setup" android:label="@string/app_name_setup">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".main" />
+				android:value="rise.android.chess_app.main" />
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" /> 
   			</intent-filter>
@@ -89,82 +89,82 @@
             	<data android:mimeType="application/x-chess-fen" />
             </intent-filter>
   		</activity>
-  		<activity android:name=".GamesListView" android:label="@string/app_name_save_games">
+  		<activity android:name="rise.android.chess_app.GamesListView" android:label="@string/app_name_save_games">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".main" />
+				android:value="rise.android.chess_app.main" />
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" /> 
   			</intent-filter>
   		</activity>
-		<activity android:name="jwtc.android.chess.puzzle.puzzle" android:label="@string/app_name">
+		<activity android:name="rise.android.chess_app.puzzle.puzzle" android:label="@string/app_name">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".start" />
+				android:value="rise.android.chess_app.start" />
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" /> 
   			</intent-filter>
   		</activity>
-		<activity android:name=".puzzle.puzzlePrefs" android:label="@string/preferences">
+		<activity android:name="rise.android.chess_app.puzzle.puzzlePrefs" android:label="@string/preferences">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".puzzle.puzzle" />
+				android:value="rise.android.chess_app.puzzle.puzzle" />
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />
 			</intent-filter>
 		</activity>
-  		<activity android:name="jwtc.android.chess.puzzle.practice" android:label="@string/app_name">
+  		<activity android:name="rise.android.chess_app.puzzle.practice" android:label="@string/app_name">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".start" />
+				android:value="rise.android.chess_app.start" />
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" /> 
   			</intent-filter>
   		</activity>
   		<!-- <service android:name="jwtc.android.chess.ics.ICSService"/> -->
-  		<activity android:name="jwtc.android.chess.ics.ICSClient"
+  		<activity android:name="rise.android.chess_app.ics.ICSClient"
 			android:label="@string/app_name_playonline"	android:launchMode="singleTop"
 			android:windowSoftInputMode="stateHidden">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".start" />
+				android:value="rise.android.chess_app.start" />
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" />
   			</intent-filter>
   		</activity>
-		<activity android:name="jwtc.android.chess.ics.ICSPrefs" android:label="@string/preferences">
+		<activity android:name="rise.android.chess_app.ics.ICSPrefs" android:label="@string/preferences">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".ics.ICSClient" />
+				android:value="rise.android.chess_app.ics.ICSClient" />
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />
 			</intent-filter>
 		</activity>
-  		<activity android:name="jwtc.android.chess.ics.CustomCommands" android:label="@string/preferences">
+  		<activity android:name="rise.android.chess_app.ics.CustomCommands" android:label="@string/preferences">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".ics.ICSPrefs" />
+				android:value="rise.android.chess_app.ics.ICSPrefs" />
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" /> 
   			</intent-filter>
   		</activity>
-  		<activity android:name="jwtc.android.chess.tools.pgntool" android:label="@string/app_name_pgntools">
+  		<activity android:name="rise.android.chess_app.tools.pgntool" android:label="@string/app_name_pgntools">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".start" />
+				android:value="rise.android.chess_app.start" />
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" /> 
   			</intent-filter>
   		</activity>
-		<activity android:name="jwtc.android.chess.tools.FileListView" android:label="@string/app_name">
+		<activity android:name="rise.android.chess_app.tools.FileListView" android:label="@string/app_name">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".tools.pgntool" />
+				android:value="rise.android.chess_app.tools.pgntool" />
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" /> 
   			</intent-filter>
   		</activity>
-  		<activity android:name="jwtc.android.chess.tools.importactivity" android:label="@string/app_name_import">
+  		<activity android:name="rise.android.chess_app.tools.importactivity" android:label="@string/app_name_import">
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" /> 
   			</intent-filter>

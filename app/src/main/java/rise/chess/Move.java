@@ -1,4 +1,4 @@
-package jwtc.chess;
+package rise.chess;
 
 // Move. Wrapper class for the integer representation of a move
 // The positional values "from" and "to" are shifted into the integer.
